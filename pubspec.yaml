@@ -1,0 +1,101 @@
+name: genesia_demo
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.6
+
+  #----------- UI -----------#
+  gap: ^3.0.1
+  flutter_svg: ^2.0.10+1
+  lottie: ^3.1.0
+
+  #----------- utils -----------#
+  intl: ^0.19.0
+  permission_handler: ^11.3.1
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+  device_info_plus: ^10.1.0
+  vibration: ^1.9.0
+  flutter_timezone: ^2.0.0
+
+  #----------- Network -----------#
+  network:
+    path: network
+
+  #----------- Storage services -----------#
+  shared_preferences: ^2.2.2
+
+  #----------- state management -----------#
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.7
+
+  #----------- video -----------#
+  video_player: ^2.9.2
+
+
+  #----------- notification -----------#
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+
+  #----------- localization -----------#
+  flutter_localizations:
+    sdk: flutter
+
+
+
+dependency_overrides:
+  video_player_android: ^2.7.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  #----------- auto generators -----------#
+  build_runner: ^2.4.9
+  flutter_gen_runner: ^5.4.0
+
+#----------- assets generator configuration ----------#
+flutter_gen:
+  output: lib/generated/
+  integrations:
+    flutter_svg: true
+    lottie: true
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/animations/
+    - assets/video/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+flutter_intl:
+  enabled: true
